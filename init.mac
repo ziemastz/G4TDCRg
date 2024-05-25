@@ -1,0 +1,27 @@
+# Macro file for the initialization of example B1
+# in interactive session
+#
+# Set some default verbose
+/control/verbose 0
+/control/saveHistory
+/run/verbose 0
+/geometry/navigator/verbose 0
+/tracking/verbose 0
+
+#
+# Change the default number of threads (in multi-threaded mode)
+#/run/numberOfThreads 4
+#
+# Initialize kernel
+/run/initialize
+#
+# Visualization setting
+#/control/execute vis.mac
+
+/process/em/lowestElectronEnergy 10 eV
+/process/em/lowestMuHadEnergy 10 eV
+/process/em/fluo true
+/process/em/pixe true
+/process/em/auger true
+/process/em/deexcitationIgnoreCut true
+#/run/beamOn 1000000
